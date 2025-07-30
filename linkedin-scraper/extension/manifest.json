@@ -1,0 +1,16 @@
+{
+  "name": "LinkedIn Profile Scraper",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": [
+    "http://localhost:5050/",
+    "https://www.linkedin.com/in/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
