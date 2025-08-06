@@ -1,11 +1,12 @@
 {
   "name": "LinkedIn Profile Scraper",
+  "description": "LinkedIn Profile details Scraping",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["scripting", "tabs"],
+  "permissions": ["scripting", "tabs", "activeTab"],
   "host_permissions": [
     "http://localhost:5050/",
-    "https://www.linkedin.com/in/*"
+    "https://www.linkedin.com/*"
   ],
   "background": {
     "service_worker": "background.js"
